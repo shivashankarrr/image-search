@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* font-family: Roboto; */
+}
+.search-input{
+    width: 400px;
+}
+.title{
+    font-weight: 600;
+}
+.image-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center; /* Center images in the container */
+}
+
+.image-thumbnail {
+    width: 150px;  /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add some shadow for better visual appearance */
+}
+.pagination-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust based on your needs */
+}
